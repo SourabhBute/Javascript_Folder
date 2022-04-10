@@ -1,0 +1,23 @@
+<html>
+    <head></head>
+    <body>
+        <form action = "page.html" onsubmit = "return validation()">
+            <input type = "text" id = "name">            
+            <input type ="submit" value="submit">
+            <br/>
+            <span id = "txtname"></span>
+        </form>        
+        <script>
+            function validation() {
+                var name = document.getElementById("name").value;
+                alert(name);
+                if(name == '') {
+                    document.getElementById("txtname").innerHTML = "Please enter your name";
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        </script>
+    </body>
+</html>

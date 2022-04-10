@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p id = "box"></p>
+        <script>
+            let arr = ["sourabh", "rahul", "Amit"];
+            let arr2 = ["sachin", "vijay", "sumit"];
+            arr3 = arr.concat(arr2);
+            text = '';
+            for (var i of arr3) {
+               text += i + " ";
+               //document.write(i);
+            }
+            document.getElementById("box").innerHTML = text;
+            console.log(arr3);
+            console.log(arr);
+        </script>
+    </body>
+</html>

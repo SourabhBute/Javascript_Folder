@@ -1,0 +1,19 @@
+<html>
+    <head></head>
+    <body>
+        <p id = "demo"> </p>
+
+        <script>
+            let text = "";
+            fruits = ["apple", "orange", "mango"];
+            fruits.forEach(myFun);
+            document.getElementById("demo").innerHTML = text;
+            function myFun(item, index) {
+                text+= index + " " +item + "<br/>";
+            }
+        </script>
+
+    </body>
+</html>
+
+

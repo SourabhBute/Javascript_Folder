@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+         <p id = "addition" ></p>
+         <p id = "substraction" ></p>
+         <p id = "multiplication" ></p>
+         <p id = "division"></p>
+         
+        <script>
+            class Calculate {
+                constructor(num1, num2) {
+                    this.num1 = num1;
+                    this.num2 = num2;
+                }
+                addtion() {
+                    return this.num1 + this.num2;
+                }
+
+                substraction() {
+                    return this.num1 - this.num2;
+                }
+
+                multiplication() {
+                    return this.num1 * this.num2;
+                }
+
+                division() {
+                    return this.num1 / this.num2;
+                }
+            }
+            obj = new Calculate(20, 10);
+            document.getElementById("addition").innerHTML = `Addition is = `+ obj.addtion();
+            document.getElementById("substraction").innerHTML = `Substratcion is = ` + obj.substraction();
+            document.getElementById("multiplication").innerHTML = `Multiplication is = ` + obj.multiplication();
+            document.getElementById("division").innerHTML = `Division is = ` + obj.division();
+
+        </script>
+    </body>
+</html>
